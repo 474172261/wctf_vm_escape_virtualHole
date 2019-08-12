@@ -9,7 +9,7 @@ This is a ctf challenge for qemu escape, it's basic and normal, but there is a t
 
 ## qemu编译:
 1. 安装库
-	Ubuntu系统
+	Ubuntu系统</br>
 	$ sudo apt-get install -y zlib1g-dev
 	$ sudo apt-get install -y libglib2.0-dev
 	$ sudo apt-get install -y autoconf
