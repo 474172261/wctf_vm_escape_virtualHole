@@ -8,7 +8,7 @@ This is a ctf challenge for qemu escape, it's basic and normal, but there is a t
 
 
 ## qemu编译:
-1. 安装库
+1. 安装库</br>
 	Ubuntu系统</br>
 	$ sudo apt-get install -y zlib1g-dev</br>
 	$ sudo apt-get install -y libglib2.0-dev</br>
@@ -17,8 +17,8 @@ This is a ctf challenge for qemu escape, it's basic and normal, but there is a t
 	$ sudo apt-get install -y libgtk2.0-dev</br> 
 	$ sudo apt install qemu-kvm</br>
 	> 安装qemu-kvm库的时候会把qemu也安装到/usr/bin/目录下,使用时注意移除它
-2. 编译
+2. 编译</br>
 	$ ./configure  --enable-kvm --target-list=x86_64-softmmu</br>
 	$ make && make install</br>
-3. 启动
+3. 启动</br>
 	$ /usr/local/bin/qemu-system-x86_64 -m 2048 -hda Centos7-Guest.img --enable-kvm -device megasas
