@@ -1,10 +1,10 @@
-# wctf_vm_escape_virtualHole
-This is a ctf challenge for qemu escape, it's basic and normal, but there is a thinking trap in it, you may need some time to find out the bug ;)
+# wctf QEMU escape practice: virtualHole
+This is a ctf challenge for qemu escape, it's basic and simple, but there is a thinking trap in it, you may need some time(almost more than 1 hour) to find out the bug ;)
 
 ## basic info
 	1. 在megasas里面找点有意思的东西吧.
 	2. qemu启动参数:qemu-system-x86_64 -m 2048 -hda Centos7.img --enable-kvm -device megasas
-	3. 以下资料可能对你测试有帮助 https://bbs.pediy.com/thread-224371.htm
+	3. 以下资料可能对你测试有帮助 https://bbs.pediy.com/thread-224371.htm, http://v-v.space/2022/03/03/qemu-virtual-device-init/
 
 
 ## qemu编译:
