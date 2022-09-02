@@ -2416,6 +2416,7 @@ static uint64_t megasas_queue_read(void *opaque, hwaddr addr,
 static void megasas_queue_write(void *opaque, hwaddr addr,
                                uint64_t val, unsigned size)
 {
+    /*00000000000000000000000000000000000*/
     MegasasState *s = opaque;
     PCIDevice *pci_dev = PCI_DEVICE(s);
  
@@ -2423,6 +2424,7 @@ static void megasas_queue_write(void *opaque, hwaddr addr,
         mega_main.pci_dev = pci_dev;
     }
    handle_plus_write(&mega_main, addr>>2, val);
+    /*00000000000000000000000000000000000*/
 }
 
 static const MemoryRegionOps megasas_queue_ops = {
@@ -2521,8 +2523,9 @@ static const VMStateDescription vmstate_megasas_gen2 = {
 static void megasas_scsi_uninit(PCIDevice *d)
 {
     MegasasState *s = MEGASAS(d);
+    /*00000000000000000000000000000000000*/
     int i;
-
+    
     for(i = 0; i < MAX_BLOCK_ID; i++){
         free(Blocks[i].buffer);
     }
@@ -2531,7 +2534,7 @@ static void megasas_scsi_uninit(PCIDevice *d)
         free(mega_main.frame_header->frame_buff);
         free(mega_main.frame_header);
     }
-
+    /*00000000000000000000000000000000000*/
     if (megasas_use_msix(s)) {
         msix_uninit(d, &s->mmio_io, &s->mmio_io);
     }
@@ -2559,9 +2562,9 @@ static void megasas_scsi_realize(PCIDevice *dev, Error **errp)
     int ret;
 
     pci_conf = dev->config;
-
+    /*00000000000000000000000000000000000*/
     Blocks = calloc(sizeof(data_block) * MAX_BLOCK_ID, 1);
-
+    /*00000000000000000000000000000000000*/
     /* PCI latency timer = 0 */
     pci_conf[PCI_LATENCY_TIMER] = 0;
     /* Interrupt pin 1 */
