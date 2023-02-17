@@ -28,10 +28,10 @@ A simple way to build enviroment:
 
 3. build VM </br>
 	`$ qemu-img create -f qcow2 centos.img 10G`</br>
-	`$ ./your/qemu-system-x86_64 -m 256 -hda centos.img -cdrom YourCentosISO.iso -enable-kvm`
+	`$ /usr/local/bin/qemu-system-x86_64 -m 256 -hda centos.img -cdrom YourCentosISO.iso -enable-kvm`
 
 after build VM, stop VM, then start test</br>
-	`$ ./your/qemu-system-x86_64 -m 2048 -hda Centos7-Guest.img --enable-kvm -device megasas`
+	`$ /usr/local/bin/qemu-system-x86_64 -m 2048 -hda Centos7-Guest.img --enable-kvm -device megasas`
 	
 ## Build your test driver
 ```c
