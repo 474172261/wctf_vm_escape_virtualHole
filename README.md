@@ -2,9 +2,9 @@
 This is a ctf challenge for qemu escape, it's basic and simple, but there is a thinking trap in it, you may need some time(more than 1 hour or 6 hours) to find out the bug. (Unless you really can't find it, don't ask others or search online! If you know the answer, the thinking trap will disapear)
 
 ## basic info
-	1. 我修改了 "qemu/v4.0.0/source/hw/scsi/megasas.c", 你需要自己替换qemu源码并编译它, 同时你需要自己创建一个linux虚拟机.
-	2. 这是虚拟机的启动参数: qemu-system-x86_64 -m 2048 -hda Centos7.img --enable-kvm -device megasas
-	3. 如果你不太了解虚拟化测试, 请一定读取一下这个文章: https://bbs.pediy.com/thread-224371.htm
+	1. check "qemu/v4.0.0/source/hw/scsi/megasas.c", you need to replace qemu's same file with mine, and you have to build a virtual machine by your self.
+	2. start the vm by: `qemu-system-x86_64 -m 2048 -hda Centos7.img --enable-kvm -device megasas`
+	3. you can read https://v-v.space/otherfile/qemu%E5%8F%8Akvm%E8%BD%AF%E4%BB%B6%E7%AE%80%E4%BB%8B.pdf if you don't know much about VM escape.
 
 
 ## qemu compile from source:
