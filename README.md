@@ -70,3 +70,6 @@ default:
 clean:  
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) clean 
 ```
+
+## Other helpful information
+https://v-v.space/2022/06/17/qemu-virtual-device-init/
