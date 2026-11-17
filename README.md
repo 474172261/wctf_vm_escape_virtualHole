@@ -8,7 +8,7 @@ This is a ctf challenge for qemu escape, it's basic and simple, but there is a t
 
 
 ## qemu compile from source:
-If you don't know how to compile it, you may need to check this [qemu build from source](https://v-v.space/2022/06/17/qemu-build/)
+If you don't know how to compile it, you may need to check this [qemu build from source](https://v-v.space/2023/02/22/qemu-build/)
 You can use any qemu source version, remember change the code of that version's `megasas` file.
 But if you are not familiar with Linux and QEMU, I advice you build `qemu 4.0` on Ubuntu 16.04.
 
