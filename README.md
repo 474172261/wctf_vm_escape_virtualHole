@@ -72,4 +72,4 @@ clean:
 ```
 
 ## Other helpful information
-https://v-v.space/2022/06/17/qemu-virtual-device-init/
+[https://v-v.space/2022/06/17/qemu-virtual-device-init/](https://v-v.space/2023/02/22/qemu-virtual-device-init/)
