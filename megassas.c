@@ -2286,7 +2286,7 @@ void megasas_quick_read(mainState *mega_main, uint32_t addr)
     offset = reader.offset;
     size = reader.size;
 
-    if(block_id >= MAX_BLOCK_ID){
+    if(reader.block_id >= MAX_BLOCK_ID){
         return -1;
     }
 
